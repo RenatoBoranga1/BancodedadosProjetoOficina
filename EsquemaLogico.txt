@@ -1,0 +1,35 @@
+Esquema Lógico (Tabelas Relacionais)
+Conceba as tabelas com base no cenário de uma oficina. Aqui está um exemplo de estrutura:
+
+Cliente
+
+id_cliente (PK)
+nome_cliente
+telefone
+email
+Veículo
+
+id_veiculo (PK)
+modelo
+marca
+ano
+id_cliente (FK)
+OrdemServico
+
+id_ordem (PK)
+data_abertura
+data_fechamento
+status
+valor_total
+id_veiculo (FK)
+Serviço
+
+id_servico (PK)
+descricao
+preco
+ItemOrdemServico
+
+id_item (PK)
+id_ordem (FK)
+id_servico (FK)
+quantidade
